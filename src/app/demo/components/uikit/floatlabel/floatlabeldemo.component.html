@@ -1,8 +1,7 @@
 <div class="card">
-    <h5>Float Label</h5>
+    <h5>API de países</h5>
     <p>
-        All input text components support floating labels by adding
-        (<mark>.p-float-label</mark>) to wrapper class.
+        La función de autocompletado utiliza un API REST para obtener países de América del Sur.
     </p>
     <div class="grid p-fluid mt-3">
         <div class="field col-12 md:col-4">
@@ -23,9 +22,9 @@
                     [(ngModel)]="value2"
                     [suggestions]="filteredCountries"
                     (completeMethod)="searchCountry($event)"
-                    field="name"
+                    field="translations.spa.official"
                 ></p-autoComplete>
-                <label for="autocomplete">AutoComplete</label>
+                <label for="autocomplete">Autocompletado</label>
             </span>
         </div>
         <div class="field col-12 md:col-4">
@@ -107,9 +106,9 @@
                 <p-dropdown
                     inputId="dropdown"
                     [autoDisplayFirst]="false"
-                    [options]="cities"
+                    [options]="wikiEntries"
                     [(ngModel)]="value10"
-                    optionLabel="name"
+                    optionLabel="title"
                 ></p-dropdown>
                 <label for="dropdown">Dropdown</label>
             </span>
@@ -118,9 +117,9 @@
             <span class="p-float-label">
                 <p-multiSelect
                     inputId="multiselect"
-                    [options]="cities"
+                    [options]="catFacts"
                     [(ngModel)]="value11"
-                    optionLabel="name"
+                    optionLabel="text"
                     [filter]="false"
                 ></p-multiSelect>
                 <label for="multiselect">MultiSelect</label>

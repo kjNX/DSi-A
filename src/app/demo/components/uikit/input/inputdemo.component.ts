@@ -6,7 +6,7 @@ import { CountryService } from 'src/app/demo/service/country.service';
     templateUrl: './inputdemo.component.html'
 })
 export class InputDemoComponent implements OnInit {
-    
+
     countries: any[] = [];
 
     filteredCountries: any[] = [];
@@ -70,7 +70,8 @@ export class InputDemoComponent implements OnInit {
         const query = event.query;
         for (let i = 0; i < this.countries.length; i++) {
             const country = this.countries[i];
-            if (country.name.toLowerCase().indexOf(query.toLowerCase()) == 0) {
+
+            if (country.translations.spa.official.toLowerCase().includes(query.toLowerCase())) {
                 filtered.push(country);
             }
         }

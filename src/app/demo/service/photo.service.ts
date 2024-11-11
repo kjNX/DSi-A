@@ -5,7 +5,8 @@ import { Image } from '../api/image';
 @Injectable()
 export class PhotoService {
 
-    constructor(private http: HttpClient) { }
+    constructor(private http: HttpClient) {
+    }
 
     getImages() {
         return this.http.get<any>('assets/demo/data/photos.json')
@@ -13,4 +14,5 @@ export class PhotoService {
             .then(res => res.data as Image[])
             .then(data => data);
     }
+
 }

@@ -10,6 +10,8 @@ export class MediaDemoComponent implements OnInit {
 
     products!: Product[];
 
+    imageLink: string;
+
     images!: any[];
 
     galleriaResponsiveOptions: any[] = [
@@ -60,5 +62,4 @@ export class MediaDemoComponent implements OnInit {
             this.images = images;
         });
     }
-    
 }
