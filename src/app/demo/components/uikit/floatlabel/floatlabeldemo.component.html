@@ -12,7 +12,7 @@
                     pInputText
                     [(ngModel)]="value1"
                 />
-                <label for="inputtext">InputText</label>
+                <label for="inputtext">Inicio (API de chistes)</label>
             </span>
         </div>
         <div class="field col-12 md:col-4">
@@ -24,7 +24,7 @@
                     (completeMethod)="searchCountry($event)"
                     field="translations.spa.official"
                 ></p-autoComplete>
-                <label for="autocomplete">Autocompletado</label>
+                <label for="autocomplete">Autocompletado (API de países de América del Sur)</label>
             </span>
         </div>
         <div class="field col-12 md:col-4">
@@ -36,7 +36,7 @@
                     pInputText
                     [(ngModel)]="value3"
                 />
-                <label for="lefticon">Left Icon</label>
+                <label for="lefticon">Hecho aleatorio (API de hechos)</label>
             </span>
         </div>
         <div class="field col-12 md:col-4">
@@ -47,7 +47,7 @@
                     pInputText
                     [(ngModel)]="value4"
                 />
-                <label for="righticon">Right Icon</label>
+                <label for="righticon">Fin (API de chistes)</label>
                 <i class="pi pi-spin pi-spinner"></i>
             </span>
         </div>
@@ -60,7 +60,7 @@
                 <label for="calendar">Calendar</label>
             </span>
         </div>
-        <div class="field col-12 md:col-4">
+        <!--<div class="field col-12 md:col-4">
             <span class="p-float-label">
                 <p-chips inputId="chips" [(ngModel)]="value6"></p-chips>
                 <label for="chips">Chips</label>
@@ -84,7 +84,7 @@
                 ></p-inputNumber>
                 <label for="inputnumber">InputNumber</label>
             </span>
-        </div>
+        </div>-->
         <div class="field col-12 md:col-4">
             <p-inputGroup>
                 <p-inputGroupAddon>
@@ -97,7 +97,7 @@
                         pInputText
                         [(ngModel)]="value9"
                     />
-                    <label for="inputgroup">InputGroup</label>
+                    <label for="inputgroup">Fuente (API de hechos)</label>
                 </span>
             </p-inputGroup>
         </div>
@@ -110,7 +110,7 @@
                     [(ngModel)]="value10"
                     optionLabel="title"
                 ></p-dropdown>
-                <label for="dropdown">Dropdown</label>
+                <label for="dropdown">Búsquedas (API de Wikipedia)</label>
             </span>
         </div>
         <div class="field col-12 md:col-4">
@@ -122,10 +122,10 @@
                     optionLabel="text"
                     [filter]="false"
                 ></p-multiSelect>
-                <label for="multiselect">MultiSelect</label>
+                <label for="multiselect">Selección múltiple (API de hechos de gatos)</label>
             </span>
         </div>
-        <div class="field col-12 md:col-4">
+        <!--<div class="field col-12 md:col-4">
             <span class="p-float-label">
                 <textarea
                     inputId="textarea"
@@ -136,6 +136,6 @@
                 ></textarea>
                 <label for="textarea">Textarea</label>
             </span>
-        </div>
+        </div>-->
     </div>
 </div>
